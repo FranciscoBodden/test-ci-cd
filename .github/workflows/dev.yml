@@ -82,7 +82,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: app/Dockerfile
+          context: app
           push: true
           tags: app:1.1
           cache-from: type=gha
