@@ -77,6 +77,8 @@ jobs:
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
+      - name: ls dockerfile 
+        run: ls app
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
