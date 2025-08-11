@@ -84,7 +84,7 @@ jobs:
         with:
           context: app
           push: true
-          tags: app:1.1
+          tags: kerdockert/app:1.1
           cache-from: type=gha
           cache-to:  type=gha,mode=max
 
