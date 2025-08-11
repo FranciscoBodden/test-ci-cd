@@ -10,7 +10,6 @@ on:
 
 jobs:
   test:
-    if: ${{ !contains(github.event.pull_request.labels.*.name, 'no-action') }}
     name: 'Test project'
     runs-on: ubuntu-24.04
     environment: development
@@ -37,8 +36,7 @@ jobs:
     
     - name: Unit Testing and Code Coverage
       run: |-
-        npm run test
-        npm run coverage
+        npm run test:cov
         
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
