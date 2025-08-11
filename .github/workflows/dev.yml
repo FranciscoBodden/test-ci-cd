@@ -5,7 +5,7 @@ on:
     branches:
     - main
     paths:
-      - .github/workflows/dev.yaml
+      - .github/workflows/dev.yml
     types: [opened, synchronize, reopened, labeled]
 
 jobs:
