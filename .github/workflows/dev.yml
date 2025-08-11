@@ -13,9 +13,6 @@ jobs:
     name: 'Test project'
     runs-on: ubuntu-24.04
     environment: development
-    defaults:
-      run:
-        working-directory: application
     outputs:
       short_sha: ${{ steps.shorten_sha.outputs.short_sha }}
       image_tag: ${{ steps.image_info.outputs.image_tag }}
